@@ -1,0 +1,4 @@
+.*.sw*
+*.pyc
+.pytest_cache
+env/
