@@ -3,3 +3,5 @@ style:
 
 test:
 	pytest
+
+check: test style

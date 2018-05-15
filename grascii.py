@@ -1,12 +1,12 @@
 # Constants
-__horizontal__ = '-'
-__vertical__ = '|'
-__corner__ = '+'
-__space__ = ' '
-__arrow_left__ = '<'
-__arrow_right__ = '>'
-__arrow_up__ = '^'
-__arrow_down__ = 'v'
+horizontal = '-'
+vertical = '|'
+corner = '+'
+space = ' '
+arrow_left = '<'
+arrow_right = '>'
+arrow_up = '^'
+arrow_down = 'v'
 
 # TODO: modes
 # - Automatic (does a best-guess placement of nodes and edges)
@@ -16,7 +16,6 @@ __arrow_down__ = 'v'
 
 
 def make_node(node_name):
-    len_node_name = len(node_name)
-    hline = __corner__ + (__horizontal__ * (len_node_name + 2)) + __corner__
-    vline = __vertical__ + __space__ + node_name + __space__ + __vertical__
+    hline = corner + (horizontal * (len(node_name) + 2)) + corner
+    vline = vertical + space + node_name + space + vertical
     return '\n'.join([hline, vline, hline])
